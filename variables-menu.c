@@ -17,7 +17,7 @@ int main () {
     printf("1. %s - $%.2f - %d Available\n", snack1, price1, stock1);
     printf("2. %s - $%.2f - %d Available\n", snack2, price2, stock2);
     printf("3. %s - $%2.f - %d Available\n", snack3, price3, stock3);
-
+ 
     return 0;
 
 }
