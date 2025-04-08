@@ -25,7 +25,16 @@ int main(){
         int rminutes = 349 % 60;
         printf("%d minutes is equal to %d hours and %d minutes.\n",minutes, hours, rminutes);
 
+        //circle
+        #define PI 3.1416
+        int radio;
+        int areac;
+        printf("Enter the circle radio: ");
+        scanf("%d", &radio);
+        area = PI * radio * radio;
+        printf("The area of the circle is: %d\n", areac);
         
+
         
         return 0;
         
