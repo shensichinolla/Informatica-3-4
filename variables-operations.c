@@ -20,9 +20,12 @@ int main(){
         int celsius = (fahrenheit - 32)/ 1.8;
         printf("%d°F = %d°C\n",fahrenheit,celsius);
 
-        int minutes = 349;
+        //time
+        int minutes;
+        printf("Enter the number of minutes: ");
+        scanf("%d,", &minutes);
         int hours = minutes / 60;
-        int rminutes = 349 % 60;
+        int rminutes = minutes % 60;
         printf("%d minutes is equal to %d hours and %d minutes.\n",minutes, hours, rminutes);
 
         //circle
@@ -31,7 +34,7 @@ int main(){
         int areac;
         printf("Enter the circle radio: ");
         scanf("%d", &radio);
-        area = PI * radio * radio;
+        area = PI * (radio * radio);
         printf("The area of the circle is: %d\n", areac);
         
 
