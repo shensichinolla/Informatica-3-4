@@ -54,12 +54,22 @@ int main(){
     int subtraction = number1 - number2;
     int multiplication = number1 * number2;
     int division = number1 / number2;
-    int operation;
+    char operation;
     printf("What operation?: ");
-    scanf("%d", &operation);
-    if (operation == addition){
-        printf("number1 + number2");
+    scanf(" %c", &operation);
+    if (operation == '+'){
+        printf("%d\n", addition);
     }
+    else if (operation == '-'){
+        printf("%d\n", subtraction);
+    }
+    else if (operation == '*'){
+        printf("%d\n", multiplication);
+    }
+    else if (operation == '/'){
+        printf("%d\n", division);
+    }
+    
 
     return 0;
 }
