@@ -26,11 +26,13 @@ int main (){
   //Excercise 2
   int s;
   printf("Enter a number: ");
-  scanf("%d", &n);
+  scanf("%d", &s);
 
   int f;
-  int multiplication = 0;
-  for (f = 1; f < s; ++f){
+  int multiplication = 1;
+  for (f = 1; f < s + 1 ; ++f){
+    multiplication = multiplication * f;
   }
   printf("%d\n", multiplication);
+
 }
