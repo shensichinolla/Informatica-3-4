@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
     int number;
@@ -15,5 +16,5 @@ int main(){
         result = result * number;
         ++i;
     }
-    printf("%d\n", result);
+    printf("%d\n", result); 
 }
