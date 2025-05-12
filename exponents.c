@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+/*int main(){
     int number;
     int exponent;
 
@@ -17,4 +17,18 @@ int main(){
         ++i;
     }
     printf("%d\n", result); 
+}*/
+
+int main(){
+    int base;
+    int exponent1;
+
+    printf("Enter a base: ");
+    scanf("%d", &base);
+    printf("Enter an exponent: ");
+    scanf("%d", &exponent1);
+
+    int result= pow(base, exponent1);
+    printf("Power of %d\n", result);
+
 }
