@@ -4,11 +4,15 @@
 
 int main() {
     int times;
+    int i;
     printf("How many times do you want to roll the dice?: ");
     scanf("%d", &times);
     
     srand(time(NULL));
-    int diceRoll = (rand() % 6) + 1; // Generates a number between 1 and 6
-    printf("You rolled a: %d\n", diceRoll);
+    for (i = 1; i <= times; i++){
+        int result = (rand() % 6) + 1;
+        printf("Roll %d: %d\n", i, result);
+    }
+    
     return 0;
 }
